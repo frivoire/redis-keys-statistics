@@ -49,7 +49,7 @@ optional arguments:
 ## Example Output
 Here is an example of what the output from `redis-keys-statistics` might look like:
 
-### Top 20 Largest Keys in Redis
+### Top 20 largest (individual) keys
 ```
 +-------------------+------+---------+------------+-------+
 | Key               | Type | Size    | Size Ratio |  TTL  |
@@ -61,7 +61,6 @@ Here is an example of what the output from `redis-keys-statistics` might look li
 | temp:data:456     | set  | 500 KB  | 60% ↑      | 1800  |
 | ...               | ...  | ...     | ...        |  ...  |
 +-------------------+------+---------+------------+-------+
-
 ```
 
 ### Key Count by Type
@@ -75,7 +74,6 @@ Here is an example of what the output from `redis-keys-statistics` might look li
 | set    | 75    |
 | string | 200   |
 +--------+-------+
-
 ```
 
 ### Stats per prefix (sorted by 'total size')
